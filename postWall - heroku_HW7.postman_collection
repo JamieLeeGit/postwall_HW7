@@ -48,10 +48,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://postwall-hw6.herokuapp.com/posts/createOne",
+					"raw": "https://mysterious-inlet-46951.herokuapp.com/posts/createOne",
 					"protocol": "https",
 					"host": [
-						"postwall-hw6",
+						"mysterious-inlet-46951",
 						"herokuapp",
 						"com"
 					],
@@ -213,17 +213,17 @@
 					}
 				},
 				"url": {
-					"raw": "https://postwall-hw6.herokuapp.com/user/profile/62996f885b3879fc700ffcda",
+					"raw": "https://mysterious-inlet-46951.herokuapp.com/user/profile/629b14df41c4a49600bd4408",
 					"protocol": "https",
 					"host": [
-						"postwall-hw6",
+						"mysterious-inlet-46951",
 						"herokuapp",
 						"com"
 					],
 					"path": [
 						"user",
 						"profile",
-						"62996f885b3879fc700ffcda"
+						"629b14df41c4a49600bd4408"
 					]
 				}
 			},
@@ -250,16 +250,53 @@
 					}
 				},
 				"url": {
-					"raw": "https://postwall-hw6.herokuapp.com/user/updatePassword",
+					"raw": "https://mysterious-inlet-46951.herokuapp.com/user/updatePassword",
 					"protocol": "https",
 					"host": [
-						"postwall-hw6",
+						"mysterious-inlet-46951",
 						"herokuapp",
 						"com"
 					],
 					"path": [
 						"user",
 						"updatePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/upload/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {token}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "img",
+							"type": "file",
+							"src": "/C:/Users/jamie/OneDrive/圖片/(歌詞)でいなっばよって☆マサリモ.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://mysterious-inlet-46951.herokuapp.com/upload/",
+					"protocol": "https",
+					"host": [
+						"mysterious-inlet-46951",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"upload",
+						""
 					]
 				}
 			},
